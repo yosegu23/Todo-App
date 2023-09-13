@@ -1,0 +1,136 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 300ms;
+}
+
+body {
+    min-height: 100vh;
+    background: #F0F0F0;
+    color: #213555;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+header,
+main,
+footer{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plus-icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.plus-icon:hover{
+    color: coral;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+}
+
+#enterTodo {
+    display: none;
+}
+
+#enterTodo form{
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #213555;
+    position: relative;
+}
+
+#enterTodo form:focus-within{
+    border-color: #213555;
+}
+
+#enterTodo input{
+    background: transparent;
+    outline: none;
+    padding: 12px;
+    color: #213555;
+    flex: 1;
+    border: none;
+}
+
+#enterTodo button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: #213555;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#enterTodo button:hover{
+    background: transparent;
+    color: coral;
+}
+
+#todos{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.todoItems{
+    display: flex;
+    align-items: center;
+}
+
+.todoItems p{
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.actions i:hover{
+    color: coral;
+}
+
+footer {
+    display: grid;
+    place-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+footer i:hover {
+    color: coral;
+}
